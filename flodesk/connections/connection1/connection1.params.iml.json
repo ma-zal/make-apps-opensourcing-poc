@@ -1,0 +1,10 @@
+[
+    {
+        "name": "apiKey",
+        "type": "password",
+        "label": "API Key",
+        "required": true,
+        "editable": true,
+        "help": "For information on how to obtain your __API Key__ value, see the [Flodesk API documentation](https://developers.flodesk.com/#section/Authentication)."
+    }
+]

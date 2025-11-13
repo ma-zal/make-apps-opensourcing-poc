@@ -1,0 +1,319 @@
+{
+    "fileVersion": 1,
+    "generalCodeFiles": {
+        "base": "general/base.iml.json",
+        "common": null,
+        "readme": "README.md",
+        "groups": "modules/groups.json"
+    },
+    "components": {
+        "connection": {
+            "connection1": {
+                "label": "Flodesk",
+                "connectionType": "basic",
+                "codeFiles": {
+                    "communication": "connections/connection1/connection1.communication.iml.json",
+                    "params": "connections/connection1/connection1.params.iml.json",
+                    "common": null
+                }
+            }
+        },
+        "module": {
+            "AddASubscriberToSegments": {
+                "label": "Add a Subscriber to Segments",
+                "description": "Adds a subscriber to segments.",
+                "moduleType": "action",
+                "actionCrud": "create",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/add-asubscriber-to-segments/add-asubscriber-to-segments.communication.iml.json",
+                    "staticParams": "modules/add-asubscriber-to-segments/add-asubscriber-to-segments.static-params.iml.json",
+                    "mappableParams": "modules/add-asubscriber-to-segments/add-asubscriber-to-segments.mappable-params.iml.json",
+                    "interface": "modules/add-asubscriber-to-segments/add-asubscriber-to-segments.interface.iml.json",
+                    "samples": "modules/add-asubscriber-to-segments/add-asubscriber-to-segments.samples.iml.json",
+                    "scope": "modules/add-asubscriber-to-segments/add-asubscriber-to-segments.scope.iml.json"
+                }
+            },
+            "CreateASubscriber": {
+                "label": "Create or Update a Subscriber",
+                "description": "Creates a new subscriber or updates a subscriber by their ID or Email.",
+                "moduleType": "action",
+                "actionCrud": "create",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/create-asubscriber/create-asubscriber.communication.iml.json",
+                    "staticParams": "modules/create-asubscriber/create-asubscriber.static-params.iml.json",
+                    "mappableParams": "modules/create-asubscriber/create-asubscriber.mappable-params.iml.json",
+                    "interface": "modules/create-asubscriber/create-asubscriber.interface.iml.json",
+                    "samples": "modules/create-asubscriber/create-asubscriber.samples.iml.json",
+                    "scope": "modules/create-asubscriber/create-asubscriber.scope.iml.json"
+                }
+            },
+            "DeleteASubscriberFromSegments": {
+                "label": "Remove a Subscriber from Segments",
+                "description": "Removes a subscriber from segments by their ID or Email.",
+                "moduleType": "action",
+                "actionCrud": "delete",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/delete-asubscriber-from-segments/delete-asubscriber-from-segments.communication.iml.json",
+                    "staticParams": "modules/delete-asubscriber-from-segments/delete-asubscriber-from-segments.static-params.iml.json",
+                    "mappableParams": "modules/delete-asubscriber-from-segments/delete-asubscriber-from-segments.mappable-params.iml.json",
+                    "interface": "modules/delete-asubscriber-from-segments/delete-asubscriber-from-segments.interface.iml.json",
+                    "samples": "modules/delete-asubscriber-from-segments/delete-asubscriber-from-segments.samples.iml.json",
+                    "scope": "modules/delete-asubscriber-from-segments/delete-asubscriber-from-segments.scope.iml.json"
+                }
+            },
+            "GetASegment": {
+                "label": "Get a Segment",
+                "description": "Retrieves the details of a segment by its ID.",
+                "moduleType": "action",
+                "actionCrud": "read",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/get-asegment/get-asegment.communication.iml.json",
+                    "staticParams": "modules/get-asegment/get-asegment.static-params.iml.json",
+                    "mappableParams": "modules/get-asegment/get-asegment.mappable-params.iml.json",
+                    "interface": "modules/get-asegment/get-asegment.interface.iml.json",
+                    "samples": "modules/get-asegment/get-asegment.samples.iml.json",
+                    "scope": "modules/get-asegment/get-asegment.scope.iml.json"
+                }
+            },
+            "GetASubscriber": {
+                "label": "Get a Subscriber",
+                "description": "Retrieves the details of a subscriber by their ID or Email.",
+                "moduleType": "action",
+                "actionCrud": "read",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/get-asubscriber/get-asubscriber.communication.iml.json",
+                    "staticParams": "modules/get-asubscriber/get-asubscriber.static-params.iml.json",
+                    "mappableParams": "modules/get-asubscriber/get-asubscriber.mappable-params.iml.json",
+                    "interface": "modules/get-asubscriber/get-asubscriber.interface.iml.json",
+                    "samples": "modules/get-asubscriber/get-asubscriber.samples.iml.json",
+                    "scope": "modules/get-asubscriber/get-asubscriber.scope.iml.json"
+                }
+            },
+            "ListAllSubscribers": {
+                "label": "List Subscribers",
+                "description": "Retrieves a list of subscribers by their status.",
+                "moduleType": "search",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/list-all-subscribers/list-all-subscribers.communication.iml.json",
+                    "staticParams": "modules/list-all-subscribers/list-all-subscribers.static-params.iml.json",
+                    "mappableParams": "modules/list-all-subscribers/list-all-subscribers.mappable-params.iml.json",
+                    "interface": "modules/list-all-subscribers/list-all-subscribers.interface.iml.json",
+                    "samples": "modules/list-all-subscribers/list-all-subscribers.samples.iml.json",
+                    "scope": "modules/list-all-subscribers/list-all-subscribers.scope.iml.json"
+                }
+            },
+            "ListSegments": {
+                "label": "List Segments",
+                "description": "Retrieves a list of all segments.",
+                "moduleType": "search",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/list-segments/list-segments.communication.iml.json",
+                    "staticParams": "modules/list-segments/list-segments.static-params.iml.json",
+                    "mappableParams": "modules/list-segments/list-segments.mappable-params.iml.json",
+                    "interface": "modules/list-segments/list-segments.interface.iml.json",
+                    "samples": "modules/list-segments/list-segments.samples.iml.json",
+                    "scope": "modules/list-segments/list-segments.scope.iml.json"
+                }
+            },
+            "MakeAnAPICall": {
+                "label": "Make an API Call",
+                "description": "Performs an arbitrary authorized API call.",
+                "moduleType": "universal",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/make-an-apicall/make-an-apicall.communication.iml.json",
+                    "staticParams": "modules/make-an-apicall/make-an-apicall.static-params.iml.json",
+                    "mappableParams": "modules/make-an-apicall/make-an-apicall.mappable-params.iml.json",
+                    "interface": "modules/make-an-apicall/make-an-apicall.interface.iml.json",
+                    "samples": "modules/make-an-apicall/make-an-apicall.samples.iml.json",
+                    "scope": "modules/make-an-apicall/make-an-apicall.scope.iml.json"
+                }
+            },
+            "UnsubsribeFromAllLists": {
+                "label": "Unsubscribe a Subscriber",
+                "description": "Removes a subscriber from all segments by their ID or Email.",
+                "moduleType": "action",
+                "actionCrud": "delete",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/unsubsribe-from-all-lists/unsubsribe-from-all-lists.communication.iml.json",
+                    "staticParams": "modules/unsubsribe-from-all-lists/unsubsribe-from-all-lists.static-params.iml.json",
+                    "mappableParams": "modules/unsubsribe-from-all-lists/unsubsribe-from-all-lists.mappable-params.iml.json",
+                    "interface": "modules/unsubsribe-from-all-lists/unsubsribe-from-all-lists.interface.iml.json",
+                    "samples": "modules/unsubsribe-from-all-lists/unsubsribe-from-all-lists.samples.iml.json",
+                    "scope": "modules/unsubsribe-from-all-lists/unsubsribe-from-all-lists.scope.iml.json"
+                }
+            },
+            "watchNewSubscribers": {
+                "label": "Watch Events",
+                "description": "Triggers when a subscriber is created, added to a segment or unsubscribed.",
+                "moduleType": "instant_trigger",
+                "connection": null,
+                "altConnection": null,
+                "webhook": "webhook1",
+                "codeFiles": {
+                    "communication": "modules/watch-new-subscribers/watch-new-subscribers.communication.iml.json",
+                    "staticParams": "modules/watch-new-subscribers/watch-new-subscribers.static-params.iml.json",
+                    "mappableParams": "modules/watch-new-subscribers/watch-new-subscribers.mappable-params.iml.json",
+                    "interface": "modules/watch-new-subscribers/watch-new-subscribers.interface.iml.json",
+                    "samples": "modules/watch-new-subscribers/watch-new-subscribers.samples.iml.json"
+                }
+            }
+        },
+        "function": {},
+        "rpc": {
+            "interfaceWebhook": {
+                "label": "Interface: Webhook",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "rpcs/interface-webhook/interface-webhook.communication.iml.json",
+                    "params": "rpcs/interface-webhook/interface-webhook.params.iml.json"
+                }
+            },
+            "messageUnsubsribeFromAllLists": {
+                "label": "Message: Unsubscribe a Subscriber",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "rpcs/message-unsubsribe-from-all-lists/message-unsubsribe-from-all-lists.communication.iml.json",
+                    "params": "rpcs/message-unsubsribe-from-all-lists/message-unsubsribe-from-all-lists.params.iml.json"
+                }
+            },
+            "optionsSegments": {
+                "label": "Options: Segments",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "rpcs/options-segments/options-segments.communication.iml.json",
+                    "params": "rpcs/options-segments/options-segments.params.iml.json"
+                }
+            },
+            "paramsCustomFields": {
+                "label": "Parameters: Custom Fields",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "rpcs/params-custom-fields/params-custom-fields.communication.iml.json",
+                    "params": "rpcs/params-custom-fields/params-custom-fields.params.iml.json"
+                }
+            }
+        },
+        "webhook": {
+            "webhook1": {
+                "label": "Watch Events",
+                "webhookType": "web",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "webhooks/webhook1/webhook1.communication.iml.json",
+                    "params": "webhooks/webhook1/webhook1.params.iml.json",
+                    "attach": "webhooks/webhook1/webhook1.attach.iml.json",
+                    "detach": "webhooks/webhook1/webhook1.detach.iml.json",
+                    "update": "webhooks/webhook1/webhook1.update.iml.json",
+                    "requiredScope": "webhooks/webhook1/webhook1.required-scope.iml.json"
+                }
+            }
+        }
+    },
+    "origins": [
+        {
+            "label": "Origin",
+            "baseUrl": "https://eu1.make.com/api",
+            "appId": "flodesk",
+            "appVersion": 1,
+            "idMapping": {
+                "connection": [
+                    {
+                        "local": "connection1",
+                        "remote": "flodesk"
+                    }
+                ],
+                "module": [
+                    {
+                        "local": "AddASubscriberToSegments",
+                        "remote": "AddASubscriberToSegments"
+                    },
+                    {
+                        "local": "CreateASubscriber",
+                        "remote": "CreateASubscriber"
+                    },
+                    {
+                        "local": "DeleteASubscriberFromSegments",
+                        "remote": "DeleteASubscriberFromSegments"
+                    },
+                    {
+                        "local": "GetASegment",
+                        "remote": "GetASegment"
+                    },
+                    {
+                        "local": "GetASubscriber",
+                        "remote": "GetASubscriber"
+                    },
+                    {
+                        "local": "ListAllSubscribers",
+                        "remote": "ListAllSubscribers"
+                    },
+                    {
+                        "local": "ListSegments",
+                        "remote": "ListSegments"
+                    },
+                    {
+                        "local": "MakeAnAPICall",
+                        "remote": "MakeAnAPICall"
+                    },
+                    {
+                        "local": "UnsubsribeFromAllLists",
+                        "remote": "UnsubsribeFromAllLists"
+                    },
+                    {
+                        "local": "watchNewSubscribers",
+                        "remote": "watchNewSubscribers"
+                    }
+                ],
+                "function": [],
+                "rpc": [
+                    {
+                        "local": "interfaceWebhook",
+                        "remote": "interfaceWebhook"
+                    },
+                    {
+                        "local": "messageUnsubsribeFromAllLists",
+                        "remote": "messageUnsubsribeFromAllLists"
+                    },
+                    {
+                        "local": "optionsSegments",
+                        "remote": "optionsSegments"
+                    },
+                    {
+                        "local": "paramsCustomFields",
+                        "remote": "paramsCustomFields"
+                    }
+                ],
+                "webhook": [
+                    {
+                        "local": "webhook1",
+                        "remote": "flodesk"
+                    }
+                ]
+            },
+            "apikeyFile": "../../.secrets/apikey"
+        }
+    ]
+}

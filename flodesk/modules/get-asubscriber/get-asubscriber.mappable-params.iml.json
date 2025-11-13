@@ -1,0 +1,8 @@
+[
+	{
+		"name": "id_or_email",
+		"type": "text",
+		"label": "Subscriber ID or Email",
+		"required": true
+	}
+]

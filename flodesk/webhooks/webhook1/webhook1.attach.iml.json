@@ -1,0 +1,14 @@
+{
+	"url": "/webhooks",
+	"method": "POST",
+	"body": {
+		"name": "{{parameters.name}}",
+		"post_url": "{{webhook.url}}",
+		"events": "{{parameters.events}}"
+	},
+	"response": {
+		"data": {
+			"externalHookId": "{{body.id}}"
+		}
+	}
+}

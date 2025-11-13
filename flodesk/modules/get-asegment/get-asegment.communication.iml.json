@@ -1,0 +1,10 @@
+{
+	"url": "/segments/{{parameters.id}}",
+	"method": "GET",
+	"response": {
+		"output": {
+			"{{...}}": "{{omit(body, 'created_at')}}",
+			"created_at": "{{parseDate(body.created_at)}}"
+		}
+	}
+}

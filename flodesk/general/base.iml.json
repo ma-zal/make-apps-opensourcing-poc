@@ -1,0 +1,19 @@
+{
+	"baseUrl": "https://api.flodesk.com/v1",
+	"headers": {
+		"Authorization": "Basic {{base64(connection.apiKey + ':')}}"
+	},
+	"response": {
+		"error": {
+			"type": "RuntimeError",
+			"message": "[{{statusCode}}] {{body.message}}",
+			"429": {
+				"type": "RateLimitError",
+				"message": "[429] Rate limit exceed. You can make up to 100 requests per minute."
+			}
+		}
+	},
+	"log": {
+		"sanitize": [ "request.headers.authorization" ]
+	}
+}

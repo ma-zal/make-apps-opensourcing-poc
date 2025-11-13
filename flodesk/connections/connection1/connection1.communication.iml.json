@@ -1,0 +1,14 @@
+{
+	"url": "https://api.flodesk.com/v1/subscribers",
+	"headers": {
+		"Authorization": "Basic {{base64(parameters.apiKey + ':')}}"
+	},
+	"response": {
+		"error": {
+			"message": "[{{statusCode}}] {{body.error}}"
+		}
+	},
+	"log": {
+		"sanitize": [ "request.headers.authorization" ]
+	}
+}

@@ -1,0 +1,41 @@
+[
+	{
+		"name": "id",
+		"type": "text",
+		"label": "Subscriber ID",
+		"help": "Either __Email__ or __Subscriber ID__ must be included."
+	},
+	{
+		"name": "email",
+		"type": "email",
+		"label": "Email",
+		"help": "Either __Email__ or __Subscriber ID__ must be included."
+	},
+	{
+		"name": "first_name",
+		"type": "text",
+		"label": "First Name"
+	},
+	{
+		"name": "last_name",
+		"type": "text",
+		"label": "Last Name"
+	},
+	{
+		"name": "double_optin",
+		"type": "boolean",
+		"label": "Double Optin",
+		"help": "Default to `No / false` when creating a new subscriber."
+	},
+	{
+		"name": "optin_ip",
+		"type": "text",
+		"label": "Opt-in IP"
+	},
+	{
+		"name": "optin_timestamp",
+		"type": "date",
+		"label": "Opt-in Timestamp"
+	},
+	"rpc://paramsCustomFields"
+]

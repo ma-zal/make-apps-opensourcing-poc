@@ -1,0 +1,13 @@
+{
+    "response": {
+        "output": {
+            "{{...}}": "{{omit(payload, 'event_time', 'subscriber')}}",
+            "event_time": "{{parseDate(payload.event_time)}}",
+            "subscriber": {
+                "{{...}}": "{{omit(payload.subscriber, 'optin_timestamp', 'created_at')}}",
+                "optin_timestamp": "{{parseDate(payload.subscriber.optin_timestamp)}}",
+                "created_at": "{{parseDate(payload.subscriber.created_at)}}"
+            }
+        }
+    }
+}

@@ -1,0 +1,129 @@
+{
+	"url": "/custom-fields",
+	"method": "GET",
+	"qs": {
+		"per_page": 100
+	},
+	"response": {
+		"iterate": "{{body.data}}",
+		"output": {
+			"name": "{{item.key}}",
+			"type": "text",
+			"label": "{{item.label}}"
+		},
+		"wrapper": [
+			{
+				"name": "event_name",
+				"type": "text",
+				"label": "Event Name"
+			},
+			{
+				"name": "event_time",
+				"type": "date",
+				"label": "Event Time"
+			},
+			{
+				"name": "webhookID",
+				"type": "text",
+				"label": "Webhook ID"
+			},
+			{
+				"name": "subscriber",
+				"label": "Subscriber",
+				"spec": [
+					{
+						"name": "id",
+						"type": "text",
+						"label": "Subscriber ID"
+					},
+					{
+						"name": "status",
+						"type": "text",
+						"label": "Status"
+					},
+					{
+						"name": "email",
+						"type": "email",
+						"label": "Email"
+					},
+					{
+						"name": "source",
+						"type": "text",
+						"label": "Source"
+					},
+					{
+						"name": "first_name",
+						"type": "text",
+						"label": "First Name"
+					},
+					{
+						"name": "last_name",
+						"type": "text",
+						"label": "Last Name"
+					},
+					{
+						"name": "segments",
+						"type": "array",
+						"label": "Segments",
+						"spec": [
+							{
+								"name": "id",
+								"type": "text",
+								"label": "Segment ID"
+							},
+							{
+								"name": "name",
+								"type": "text",
+								"label": "Segment Name"
+							}
+						]
+					},
+					{
+						"name": "optin_ip",
+						"type": "text",
+						"label": "Opt-in IP"
+					},
+					{
+						"name": "optin_timestamp",
+						"type": "date",
+						"label": "Opt-in Timestamp"
+					},
+					{
+						"name": "created_at",
+						"type": "date",
+						"label": "Created at"
+					},
+					{
+						"name": "custom_fields",
+						"type": "collection",
+						"label": "Custom Fields",
+						"spec": "{{output}}"
+					}
+				],
+				"type": "collection"
+			},
+			{
+				"label": "Segment",
+				"name": "segment",
+				"type": "collection",
+				"spec": [
+					{
+						"label": "ID",
+						"name": "id",
+						"type": "text"
+					},
+					{
+						"label": "Name",
+						"name": "name",
+						"type": "text"
+					}
+				]
+			},
+			{
+				"name": "webhook_id",
+				"type": "text",
+				"label": "Webhook ID"
+			}
+		]
+	}
+}

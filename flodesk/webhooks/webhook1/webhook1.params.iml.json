@@ -1,0 +1,29 @@
+[
+    {
+        "name": "name",
+        "type": "text",
+        "label": "Webhook Name in Flodesk",
+        "required": true
+    },
+    {
+        "name": "events",
+        "type": "select",
+        "label": "Events",
+        "multiple": true,
+        "required": true,
+        "options": [
+            {
+                "value": "subscriber.added_to_segment",
+                "label": "Subscriber Added to Segment"
+            },
+            {
+                "value": "subscriber.created",
+                "label": "Subscriber Created"
+            },
+            {
+                "value": "subscriber.unsubscribed",
+                "label": "Subscriber Unsubscribed"
+            }
+        ]
+    }
+]

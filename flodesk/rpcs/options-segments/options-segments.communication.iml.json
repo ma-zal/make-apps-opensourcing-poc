@@ -1,0 +1,21 @@
+{
+	"url": "/segments",
+	"method": "GET",
+	"qs": {
+		"per_page": 100
+	},
+	"response": {
+		"iterate": "{{body.data}}",
+		"output": {
+			"label": "{{item.name}}",
+			"value": "{{item.id}}"
+		},
+		"limit": "{{parameters.limit}}"
+	},
+	"pagination": {
+		"qs": {
+			"page": "{{pagination.page}}"
+		},
+		"condition": "{{body.meta.total_pages >= pagination.page}}"
+	}
+}

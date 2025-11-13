@@ -1,0 +1,8 @@
+{
+	"response": {
+		"output": {
+			"type": "html",
+			"label": "<div style='color: #205671; background: #E8F6FF; border-radius: 5px; padding: 12px 16px 12px 16px; font-size: 12px;'>Once the subscriber is unsubscribed, you cannot add them back (resubscribe) to your list. The only way they can be added back (resubscribe) as an active subscriber is if they sign up again via a Flodesk opt-in form.</div>"
+		}
+	}
+}

@@ -1,0 +1,16 @@
+[
+	{
+		"name": "id_or_email",
+		"type": "text",
+		"label": "Subscriber ID or Email",
+		"required": true
+	},
+	{
+		"name": "segment_ids",
+		"type": "select",
+		"label": "Segment IDs",
+		"required": true,
+		"multiple": true,
+		"options": "rpc://optionsSegments"
+	}
+]

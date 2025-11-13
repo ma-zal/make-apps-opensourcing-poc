@@ -1,0 +1,21 @@
+{
+	"url": "/segments",
+	"method": "GET",
+	"qs": {
+		"per_page": 100
+	},
+	"response": {
+		"iterate": "{{body.data}}",
+		"output": {
+			"{{...}}": "{{omit(item, 'created_at')}}",
+			"created_at": "{{parseDate(item.created_at)}}"
+		},
+		"limit": "{{parameters.limit}}"
+	},
+	"pagination": {
+		"qs": {
+			"page": "{{pagination.page}}"
+		},
+		"condition": "{{body.meta.total_pages >= pagination.page}}"
+	}
+}

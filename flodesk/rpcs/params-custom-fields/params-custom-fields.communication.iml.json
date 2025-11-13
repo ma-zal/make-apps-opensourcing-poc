@@ -1,0 +1,21 @@
+{
+	"url": "/custom-fields",
+	"method": "GET",
+	"qs": {
+		"per_page": 100
+	},
+	"response": {
+		"iterate": "{{body.data}}",
+		"output": {
+			"name": "{{item.key}}",
+			"type": "text",
+			"label": "{{item.label}}"
+		},
+		"wrapper": {
+			"name": "custom_fields",
+			"type": "collection",
+			"label": "Custom Fields",
+			"spec": "{{output}}"
+		}
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"url": "/subscribers/{{parameters.id_or_email}}/unsubscribe",
+	"method": "POST",
+	"response": {
+		"output": {
+			"{{...}}": "{{omit(body, 'optin_timestamp', 'created_at')}}",
+			"optin_timestamp": "{{parseDate(body.optin_timestamp)}}",
+			"created_at": "{{parseDate(body.created_at)}}"
+		}
+	}
+}
